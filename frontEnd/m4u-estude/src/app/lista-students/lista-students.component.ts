@@ -1,6 +1,6 @@
 import { StudentsService } from './../services/students.service';
-import { Component, Input, OnInit } from '@angular/core';
-import { StudentComponent } from '../student/student.component';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-lista-students',
@@ -14,7 +14,7 @@ export class ListaStudentsComponent implements OnInit {
   constructor(private service: StudentsService) { }
 
   ngOnInit(): void {
-    this.service.todos().subscribe((students: StudentComponent[])=> {
+    this.service.todos().subscribe((students: any[])=> {
       console.table(students)
       this.students = students;
     })

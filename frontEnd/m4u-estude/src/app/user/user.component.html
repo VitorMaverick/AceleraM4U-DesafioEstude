@@ -1,1 +1,18 @@
-<p>user works!</p>
+<form (ngSubmit)="cadastrar()">
+  <h2>Cadastrar novo usuário</h2>
+
+  <div class="mat-form-field">
+      <label for="username">Username</label>
+      <input id="username" type="text" [(ngModel)]="username" name="username">
+  </div>
+  <div>
+      <label for="email">Email</label>
+      <input id="email" type="text" [(ngModel)]="email" name="email">
+  </div>
+  <div>
+    <label for="senha">Senha</label>
+    <input id="idade" type="password" [(ngModel)]="password" name="password">
+</div>
+
+  <button type="submit">Cadastrar</button>
+</form>

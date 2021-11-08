@@ -1,7 +1,6 @@
 import { StudentsService } from './../services/students.service';
 import { Component, OnInit, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
-import { Student } from '../models/student.models';
 
 @Component({
   selector: 'app-student',
@@ -23,7 +22,7 @@ export class StudentComponent implements OnInit {
   }
 
   cadastrar() {
-    console.log('Solicita caadastro de novo estudante');
+    console.log('Solicita casdastro de novo estudante');
     console.log('nome: ', this.name);
     console.log('nome: ', this.email);
     console.log('nome: ', this.age);

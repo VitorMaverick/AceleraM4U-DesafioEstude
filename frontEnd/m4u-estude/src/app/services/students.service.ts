@@ -21,14 +21,14 @@ get students() {
   return this.studentsList;
 }
 
-adicionar(student: StudentComponent): Observable<StudentComponent> {
+adicionar(student: any): Observable<any> {
   this.studentsList.push(student)
 
   return this.httpClient.post<StudentComponent>(this.url, student)
 }
 
-todos(): Observable<StudentComponent[]> {
-  return this.httpClient.get<StudentComponent[]>(this.url)
+todos(): Observable<any[]> {
+  return this.httpClient.get<any[]>(this.url)
 }
 
 
