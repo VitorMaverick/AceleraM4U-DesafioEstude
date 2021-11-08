@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <th>Nome</th>
+    <th>E-mail</th>
+    <th>idade</th>
+  </thead>
+  <tbody *ngIf="students.length > 0; else listaVazia">
+    <tr *ngFor="let student of students">
+      <td>{{ student.name }}</td>
+      <td>{{ student.email }}</td>
+      <td>{{ student.age }}</td>
+    </tr>
+  </tbody>
+</table>
+<ng-template #listaVazia>
+  <p>Nenhum estudante cadastrado</p>
+</ng-template>

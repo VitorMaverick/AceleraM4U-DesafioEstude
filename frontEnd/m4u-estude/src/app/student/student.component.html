@@ -1,0 +1,19 @@
+
+<form (ngSubmit)="cadastrar()">
+    <h2>Novo Estudante</h2>
+
+    <div>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" [(ngModel)]="name" name="name">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input id="email" type="text" [(ngModel)]="email" name="email">
+    </div>
+    <div>
+      <label for="idade">Idade</label>
+      <input id="idade" type="number" [(ngModel)]="age" name="age">
+  </div>
+
+    <button type="submit">Cadastrar</button>
+</form>
