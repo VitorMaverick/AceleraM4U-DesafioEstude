@@ -8,7 +8,7 @@
 
 Uma API Rest contendo o backend em Spring Boot e frontend em Angular.
 
-O repositório conta com a Branch Developer, usada durante a produção, e a branch Main que contém nosso produto final, já testao pela equipe.
+O repositório conta com a Branch Developer, usada durante a produção, e a branch Main que contém nosso produto final, já testado pela equipe.
 </b>
 
 <b>Tecnologias utilizadas:<br> </b>
