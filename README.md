@@ -6,7 +6,10 @@
 
 <b>Implementação do desafio, proposto pelo treinamento Acelera M4U, que consiste na implementação de um sistema Back-End que gerencia os usuários da plataforma de cursos da empresa fictícia ESTUDE.
 
-Uma API Rest contendo o backend em Spring Boot e frontend em Angular. </b>
+Uma API Rest contendo o backend em Spring Boot e frontend em Angular.
+
+O repositório conta com a Branch Developer, usada durante a produção, e a branch Main que contém nosso produto final, já testao pela equipe.
+</b>
 
 <b>Tecnologias utilizadas:<br> </b>
 Java:JDK 11<br>
@@ -22,6 +25,7 @@ localhost:8080<br>
 localhost:8080/students<br>
 localhost:8080/users<br>
 localhost:8080/address<br>
+localhost:8080/register<br>
 
 <b>
 Acesso ao Frontend <br> </b>
