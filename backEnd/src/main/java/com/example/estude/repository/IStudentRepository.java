@@ -1,12 +1,9 @@
 package com.example.estude.repository;
 
-import com.example.estude.dto.AddressRequest;
-
 import com.example.estude.model.Student;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 

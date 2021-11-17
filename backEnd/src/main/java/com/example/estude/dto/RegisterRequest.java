@@ -4,7 +4,7 @@ import com.example.estude.model.Student;
 
 import java.util.Objects;
 
-public class AddressRequest {
+public class RegisterRequest {
 
     private Student student;
 
@@ -28,7 +28,7 @@ public class AddressRequest {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        AddressRequest that = (AddressRequest) o;
+        RegisterRequest that = (RegisterRequest) o;
         return Objects.equals(student, that.student);
     }
 

@@ -18,8 +18,8 @@ public class UserService {
         return iUserRepository.findAll();
     }
 
-    public List<User> findBy( String username) {
-        return iUserRepository.findByNameContaining(username);
+    public Optional<User> findBy( String username ) {
+        return iUserRepository.findByUsername(username);
     }
 
     @Transactional

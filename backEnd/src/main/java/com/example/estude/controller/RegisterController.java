@@ -1,6 +1,6 @@
 package com.example.estude.controller;
 
-import com.example.estude.dto.AddressRequest;
+import com.example.estude.dto.RegisterRequest;
 import com.example.estude.model.Student;
 import com.example.estude.service.StudentService;
 import com.example.estude.service.UserService;
@@ -17,12 +17,9 @@ public class RegisterController {
 
     @Autowired
     private StudentService studentService;
-    @Autowired
-    private UserService userService;
 
     @PostMapping("/register")
-    public Student registra(@RequestBody AddressRequest request){
-
+    public Student registra(@RequestBody RegisterRequest request){
         return studentService.save(request.getStudent());
     }
     

@@ -18,7 +18,7 @@ public class Student {
     private Integer id;
     @NotNull @NotEmpty @Length(min = 3, max = 200)
     private String name;
-    @NotEmpty @Length(min = 6, message = "Deve possuir no minimo 9 digitos")
+    @NotEmpty @Length(min = 6, message = "Deve possuir no minimo 6 digitos")
     private String email;
 
     private Integer age;

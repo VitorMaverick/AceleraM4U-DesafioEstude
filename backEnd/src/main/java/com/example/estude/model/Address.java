@@ -26,7 +26,7 @@ public class Address {
         return id;
     }
 
-    public void setIdAddress(Integer id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
