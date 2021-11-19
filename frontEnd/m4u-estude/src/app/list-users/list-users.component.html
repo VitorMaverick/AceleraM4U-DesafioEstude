@@ -1,0 +1,13 @@
+<table>
+  <thead>
+    <th>Usuário</th>
+  </thead>
+  <tbody *ngIf="users.length > 0; else listaVazia">
+    <tr *ngFor="let username of users">
+      <td>{{ users.[]}</td>
+    </tr>
+  </tbody>
+</table>
+<ng-template #listaVazia>
+  <p>Nenhum usuário cadastrado</p>
+</ng-template>

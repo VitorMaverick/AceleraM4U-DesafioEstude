@@ -21,15 +21,15 @@ public class UserService {
     public Optional<User> findBy( String username ) {
         return iUserRepository.findByUsername(username);
     }
+    public Optional<User> findById( Integer id){
+        return iUserRepository.findById(id);
+    }
 
     @Transactional
     public User save( User user) {
         return iUserRepository.save(user);
     }
 
-    public Optional<User> findById( Integer id){
-        return iUserRepository.findById(id);
-    }
 
     @Transactional
     public void remove( Integer id) {

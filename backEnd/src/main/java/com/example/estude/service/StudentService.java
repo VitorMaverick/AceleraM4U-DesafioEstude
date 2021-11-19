@@ -22,7 +22,13 @@ public class StudentService {
     }
 
     public List<Student> findBy(String name) {
-        return studentRepository.findByNameContaining(name);
+        return
+                studentRepository.findByNameContaining(name);
+    }
+
+    public Optional<Student> findById(Integer id) {
+
+        return studentRepository.findById(id);
     }
 
     public Page<Student> findBy(String name, Pageable paginacao) {
@@ -40,9 +46,6 @@ public class StudentService {
         return studentRepository.save(student);
     }
 
-    public Optional<Student> findById(Integer id) {
-        return studentRepository.findById(id);
-    }
 
     @Transactional
     public void remove(Integer id) {

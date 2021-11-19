@@ -1,6 +1,8 @@
 import { StudentsService } from './services/students.service';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UsersService } from './services/users.service';
+
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,7 @@ export class AppComponent {
 
   title = 'm4u-estude';
 
-  constructor(private service: StudentsService){
+  constructor(private service: UsersService){
 
   }
 
