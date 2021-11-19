@@ -1,4 +1,4 @@
-/*package com.example.estude.service;
+package com.example.estude.service;
 
 import com.example.estude.model.Address;
 import com.example.estude.repository.IAddressRepository;
@@ -14,20 +14,28 @@ public class AddressService {
 
     @Autowired
     private IAddressRepository addressRepository;
-    public List<Address> all() {return addressRepository.findAll();}
-    public List<Address>findById(Integer id){return addressRepository.findByNameContaining(id);}
 
-    @Transactional
-    public Address save(Address){return addressRepository.save(address);}
-    //public Optional<Address> findById(Integer id) {
-        //return iAddressRepository.findById(id);
+    public List<Address> all() {
+        return addressRepository.findAll();
+    }
+
+
+    public List<Address> findBy(String street) {
+        return addressRepository.findByStreetContaining(street);
     }
 
     @Transactional
-    public void remove(Integer id) {iAddressRepository.deleteById(id);}
+    public Address save(Address address) {
+        return addressRepository.save(address);
     }
 
+    public Optional<Address> findById(Integer id) {
+        return addressRepository.findById(id);
+    }
+
+    @Transactional
+    public void remove(Integer id) {
+        addressRepository.deleteById(id);
+    }
 
 }
-
- */
